@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* background-color : #16161b; */
+}
+.icon{
+    border-radius: 50%;
+}
+.text-center {
+    text-align: center;
+}
+.main-title {
+    text-align: center;
+    padding: 0 20px;
+}
+ .navBar {
+    display: flex; /* Muestra elementos de la lista en línea */
+    justify-content: space-between; /* Centra horizontalmente el elemento */
+    align-items: center; /* Centra verticalmente el elemento */
+    padding: 10px; /* Agrega un relleno de 10px */
+}
+.marca {
+    margin: 10px; /* Elimina el margen predeterminado de la lista */
+    width: 100px;
+    border-radius: 50%;
+}
+.lista-navBar {
+    margin: 10px; /* Elimina el margen predeterminado de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+.lista-navBar li {
+    display: inline; /* Mostrar elementos de la lista en línea */
+    margin-left: 30px; /* Espacio entre elementos de la lista */
+}
+/* stiky de whatsapp *//* Estilos para el botón de WhatsApp sticky */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px;
+    text-decoration: none;
+    box-shadow: none;
+    z-index: 9999; /* Asegura que el botón esté sobre otros elementos */
+    transition: opacity 0.3s ease; /* Agrega una transición de opacidad */
+}
+
+.whatsapp:hover {
+    opacity: 0.8; /* Reduce la opacidad cuando se pasa el mouse sobre el botón */
+}
+/* efecto para las cards start*/
+/* Efecto de zoom in en las imágenes de las tarjetas */
+.card-img-top {
+    transition: transform 0.3s ease; /* Transición suave */
+}
+.card-img-top:hover {
+    transform: scale(1.1); /* Efecto de zoom */
+}
+/* efecto para las cards ends*/
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
