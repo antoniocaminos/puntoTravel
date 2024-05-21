@@ -77,4 +77,10 @@
 }
 /* Estilo de zoom para las imágenes */
 
+/* estilo para resolucion tablet */
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');

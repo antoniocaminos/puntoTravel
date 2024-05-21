@@ -19,7 +19,7 @@
         <div class="banner">
             <h6 class="text-center">Hola, soy un banner de contacto</h6>
         </div>
-        <div class="navBar">
+        <div class="navBar" class="d-none">
             <a href="#"><img src="./Image/logo.jpg" class="marca"></a>
             <ul class="lista-navBar">
                 <li><a href="#">Inicio</a></li>
@@ -29,7 +29,48 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </div>
-    </div>
+    <!-- hamburguesa start -->
+    <div class="main">
+      <div class="contenedor">
+          <div class="banner">
+              <h6 class="text-center">Hola, soy un banner de contacto</h6>
+          </div>
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                  <a href="#"><img src="./Image/logo.jpg" class="marca"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Productos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Administración</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Contacto</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+          <!-- End Navbar -->
+          <!-- Carrusel y otros contenidos -->
+          <!-- Asegúrate de que el resto del contenido esté aquí -->
+      </div>
+  </div>
+  
+  <!-- hamburguesa end -->  
+      </div>
     <!-- Carrusel start -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
@@ -110,6 +151,7 @@
 
     <!-- productos especiales start -->
     <!-- Productos especiales start -->
+<div class="especiales">
 <h1 class="main-title">Productos especiales</h1>
 <p class="texto-centrado">Te acercamos una gran variedad de productos de todo el mundo. Elegí el que más te gusta y ponete en contacto con nosotros.</p>
 <div class="especiales container">
@@ -135,6 +177,39 @@
             <img src="./Image/especial_6.jpg" class="img-fluid" alt="especial_6">
         </div>
     </div>
+</div>
+<!-- carrusel para especiales en tablet -->
+<div id="carouselEspeciales" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="./Image/especial_1.jpg" class="img-fluid" alt="especial_1">
+      </div>
+      <div class="carousel-item">
+          <img src="./Image/especial_2.jpg" class="img-fluid" alt="especial_2">
+      </div>
+      <div class="carousel-item">
+          <img src="./Image/especial_3.jpg" class="img-fluid" alt="especial_3">
+      </div>
+      <div class="carousel-item">
+          <img src="./Image/especial_4.jpg" class="img-fluid" alt="especial_4">
+      </div>
+      <div class="carousel-item">
+          <img src="./Image/especial_5.jpg" class="img-fluid" alt="especial_5">
+      </div>
+      <div class="carousel-item">
+          <img src="./Image/especial_6.jpg" class="img-fluid" alt="especial_6">
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselEspeciales" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselEspeciales" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- carrusel para especiales en tablet ends -->
 </div>
 <!-- Productos especiales ends -->
 
