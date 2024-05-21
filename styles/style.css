@@ -83,4 +83,10 @@
         flex-direction: column;
     }
 }
+/* Agrega la clase d-none a la navbar en resoluciones pequeñas */
+@media (max-width: 991px) {
+    .navBar {
+        display: none;
+    }
+}
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
