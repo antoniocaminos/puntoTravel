@@ -33,7 +33,7 @@
 }
 
 .marca {
-    width: 150px; /* Adjust the size of the logo */
+    width: 170px; /* Adjust the size of the logo */
     margin-right: 20px; /* Add some space between the logo and the nav items */
     border-radius: 50%;
 }
@@ -134,7 +134,7 @@
 }
 /* footer */
 .logo-footer {
-    width: 190px;
+    width: 150px;
     border-radius: 50%;
 }
 
@@ -186,7 +186,7 @@
 }
 
 .logo-footer {
-    width: 190px;
+    width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -293,3 +293,24 @@
     }
 }
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* estilos para contacto start */.contact-section .card {
+    height: 100%;
+}
+
+.contact-section .contact-form {
+    height: 100%;
+}
+
+.contact-section .contact-form .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-section .contact-form form {
+    margin-bottom: 20px; /* Para eliminar el margen inferior del formulario */
+    margin-top: 20px;
+}
+
+/* estilos para contacto ends */
