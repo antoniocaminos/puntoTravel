@@ -1,6 +1,4 @@
-Vamos a ajustar tu código CSS para que funcione correctamente, incluyendo los estilos del botón de WhatsApp y el color de fondo del footer. Te proporciono el código CSS actualizado y mejor organizado:
 
-```css
 /* Reset general */
 * {
     padding: 0;
@@ -39,6 +37,11 @@ Vamos a ajustar tu código CSS para que funcione correctamente, incluyendo los e
 }
 
 .marca {
+    width: 170px; /* Adjust the size of the logo */
+    margin-right: 20px; /* Add some space between the logo and the nav items */
+    border-radius: 50%;
+}
+.marca-ellas{
     width: 170px; /* Adjust the size of the logo */
     margin-right: 20px; /* Add some space between the logo and the nav items */
     border-radius: 50%;
@@ -253,4 +256,7 @@ Vamos a ajustar tu código CSS para que funcione correctamente, incluyendo los e
 .navbar-custom-ellas{
     background-color: rgb(160, 32, 117); /* Custom footer background */
 
+}
+.ellasH2{
+    color: #fff;
 }
