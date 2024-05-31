@@ -1,23 +1,29 @@
+Vamos a ajustar tu código CSS para que funcione correctamente, incluyendo los estilos del botón de WhatsApp y el color de fondo del footer. Te proporciono el código CSS actualizado y mejor organizado:
+
+```css
+/* Reset general */
 * {
     padding: 0;
     margin: 0;
-    /* background-color : #16161b; */
 }
-.icon{
+
+/* Icon styles */
+.icon {
     border-radius: 50%;
 }
-.text-center {
+
+/* Text alignment */
+.text-center,
+.main-title,
+.texto-centrado {
     text-align: center;
 }
-.main-title {
-    text-align: center;
-    padding-bottom: 20px;
-}
-.texto-centrado{
-    text-align: center;
+
+.texto-centrado {
     padding-bottom: 20px;
     align-content: center;
 }
+
 /* Navbar styles */
 .navbar {
     display: flex;
@@ -67,7 +73,7 @@
     margin-left: auto; /* Align the toggler button to the right */
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for navbar */
 @media (max-width: 991px) {
     .navbar-nav {
         flex-direction: column;
@@ -80,10 +86,17 @@
     }
 
     .navbar-toggler {
+        background-color: rgb(160, 32, 117);
         margin-right: 20px; /* Adjust as needed for alignment on small screens */
     }
+
+    /* Hide navbar on small screens */
+    .navBar {
+        display: none;
+    }
 }
-/* stiky de whatsapp *//* Estilos para el botón de WhatsApp sticky */
+
+/* WhatsApp sticky button */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -98,85 +111,40 @@
     line-height: 60px;
     text-decoration: none;
     box-shadow: none;
-    z-index: 9999; /* Asegura que el botón esté sobre otros elementos */
-    transition: opacity 0.3s ease; /* Agrega una transición de opacidad */
+    z-index: 9999; /* Ensure the button is above other elements */
+    transition: opacity 0.3s ease; /* Add an opacity transition */
 }
 
 .whatsapp:hover {
-    opacity: 0.8; /* Reduce la opacidad cuando se pasa el mouse sobre el botón */
+    opacity: 0.8; /* Reduce opacity on hover */
 }
-/* efecto para las cards start*/
-/* Efecto de zoom in en las imágenes de las tarjetas */
-.card-img-top {
-    transition: transform 0.3s ease; /* Transición suave */
-}
-.card-img-top:hover {
-    transform: scale(1.1); /* Efecto de zoom */
-}
-/* efecto para las cards ends*/
-/* Estilo de zoom para las imágenes */
+
+/* Card hover effects */
+.card-img-top,
 .especiales img {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Smooth transition */
 }
+
+.card-img-top:hover,
 .especiales img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Zoom effect */
 }
-.especiales{
+
+.especiales {
     padding-bottom: 20px;
 }
-/* Estilo de zoom para las imágenes */
 
-/* estilo para resolucion tablet */
-@media (max-width: 991px) {
-    .navbar-nav {
-        flex-direction: column;
-    }
-}
-/* footer */
-.logo-footer {
-    width: 150px;
-    border-radius: 50%;
-}
-
-/* footer start */
-/* footer */
-.footer {
-    background-color: #333; /* Color de fondo del footer */
-    color: #fff; /* Color del texto del footer */
-    padding: 20px; /* Espaciado interno del footer */
-    text-align: center; /* Alinea el contenido al centro */
-}
-
-.footer-table {
-    margin: 0 auto; /* Centra la tabla horizontalmente */
-    width: 100%; /* La tabla ocupa todo el ancho disponible */
-    border-collapse: collapse; /* Colapsa los bordes de la tabla */
-}
-
-.footer-table td {
-    padding: 20px; /* Espaciado interno de las celdas de la tabla */
-}
-
-.copyright {
-    margin-top: 20px; /* Espacio superior del copyright */
-}
-
-/* footer ends */
-/* Estilos generales */
-* {
-    padding: 0;
-    margin: 0;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
+/* Footer styles */
+.footer,
+.footer-ellas {
+    background-color: #333; /* Default footer background */
+    color: #fff; /* Footer text color */
     padding: 20px;
     text-align: center;
+}
+
+.footer-ellas {
+    background-color: rgb(160, 32, 117); /* Custom footer background */
 }
 
 .footer-content {
@@ -209,7 +177,7 @@
     text-align: left;
 }
 
-.footer-left h6, 
+.footer-left h6,
 .footer-right h6 {
     margin: 5px 0;
 }
@@ -225,7 +193,7 @@
     text-decoration: none;
 }
 
-/* Responsividad */
+/* Responsive adjustments for footer */
 @media (max-width: 768px) {
     .footer-info {
         flex-direction: column;
@@ -242,9 +210,8 @@
         margin-top: 20px;
     }
 }
-/* social media start */
 
-/* Redes sociales */
+/* Social media styles */
 .social {
     margin-top: 20px;
 }
@@ -257,47 +224,18 @@
 
 .social-media a {
     color: #fff;
-    font-size: 24px; /* Aumenta el tamaño de los íconos */
+    font-size: 24px; /* Increase icon size */
 }
 
 .social-media a:hover {
     color: #ddd;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    .footer-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-left,
-    .footer-right {
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer-right {
-        margin-top: 20px;
-    }
-}
-/* sociale media ends */
-
-
-
-
-/* Agrega la clase d-none a la navbar en resoluciones pequeñas */
-@media (max-width: 991px) {
-    .navBar {
-        display: none;
-    }
-}
+/* Import Font Awesome for social media icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
-/* estilos para contacto start */.contact-section .card {
-    height: 100%;
-}
-
+/* Contact section styles */
+.contact-section .card,
 .contact-section .contact-form {
     height: 100%;
 }
@@ -309,8 +247,10 @@
 }
 
 .contact-section .contact-form form {
-    margin-bottom: 20px; /* Para eliminar el margen inferior del formulario */
     margin-top: 20px;
+    margin-bottom: 20px; /* Remove bottom margin */
 }
+.navbar-custom-ellas{
+    background-color: rgb(160, 32, 117); /* Custom footer background */
 
-/* estilos para contacto ends */
+}
