@@ -260,3 +260,34 @@
 .ellasH2{
     color: #fff;
 }
+.grid-img {
+    width: 100%;
+    height: auto;
+}
+.grid-item {
+    padding: 5px;
+}
+/* grid de productos start */ 
+.container-productos{
+    padding: 30px;
+    margin: 30px;
+}
+    .grid-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* Ajusta el radio del borde aquí */
+            transition: transform 0.3s ease; /* Transición suave para el efecto zoom */
+        }
+        .grid-item {
+            padding: 5px;
+        }
+        .img-large {
+            height: calc(100% + 10px);
+        }
+        .img-small {
+            height: 50%;
+        }
+        .grid-img:hover {
+            transform: scale(1.1); /* Efecto de zoom in */
+        }
+/* grid de productos ends */
