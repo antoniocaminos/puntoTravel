@@ -121,7 +121,9 @@
 .whatsapp:hover {
     opacity: 0.8; /* Reduce opacity on hover */
 }
-
+.card{
+    margin-top: 60px;
+}
 /* Card hover effects */
 .card-img-top,
 .especiales img {
@@ -276,22 +278,114 @@
     padding: 30px;
     margin: 30px;
 }
-    .grid-img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px; /* Ajusta el radio del borde aquí */
-            transition: transform 0.3s ease; /* Transición suave para el efecto zoom */
-        }
-        .grid-item {
-            padding: 5px;
-        }
-        .img-large {
-            height: calc(100% + 10px);
-        }
-        .img-small {
-            height: 50%;
-        }
-        .grid-img:hover {
-            transform: scale(1.1); /* Efecto de zoom in */
-        }
+/* Grid de imágenes */
+/* Estilos para el grid de imágenes */
+.container-productos {
+    padding: 20px;
+}
+
+.grid-item {
+    padding: 10px;
+    position: relative;
+}
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 15px; /* Borde redondeado */
+    object-fit: cover; /* Para mantener proporciones y recortar */
+}
+
+/* Estilos específicos para las imágenes del grid */
+.img-large {
+    height: 100%; /* Altura completa para ocupar dos filas */
+}
+
+.img-small {
+    height: 50%; /* Altura para ocupar media fila */
+}
+
+.img-horizontal {
+    height: 50%; /* Misma altura que las imágenes pequeñas */
+}
+
+/* Layout responsivo usando flexbox */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-6,
+.col-md-6,
+.col-sm-12,
+.col-6,
+.col-12 {
+    box-sizing: border-box;
+}
+
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-md-6,
+.col-md-12 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Ajustes para centrar y asegurar que la imagen vertical ocupe exactamente dos filas */
+.col-lg-6.col-md-12.col-sm-12.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-large {
+    height: calc(100% - 20px); /* Ajustar para ocupar el espacio correctamente */
+}
+
+.col-6.grid-item {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .img-large {
+        height: calc(100vh - 40px); /* Altura ajustada para dispositivos más grandes */
+    }
+
+    .img-small, .img-horizontal {
+        height: calc(50vh - 20px); /* Ajustar para dispositivos más grandes */
+    }
+}
+
 /* grid de productos ends */
+/* carusel de testimonios */
+.carousel-container {
+    position: relative;
+}
+
+.instagram-texto {
+    position: absolute;
+    bottom: 20px; /* Ajusta esta propiedad según tu preferencia */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%);
+}
+/* carusel de testimonios ends */
