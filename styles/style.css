@@ -75,7 +75,9 @@
 .navbar-toggler {
     margin-left: auto; /* Align the toggler button to the right */
 }
-
+.container{
+    margin-bottom: 100px;
+}
 /* Responsive adjustments for navbar */
 @media (max-width: 991px) {
     .navbar-nav {
@@ -123,6 +125,8 @@
 }
 .card{
     margin-top: 60px;
+   
+    
 }
 /* Card hover effects */
 .card-img-top,
