@@ -247,6 +247,7 @@
 .contact-section .card,
 .contact-section .contact-form {
     height: 100%;
+    align-items: center;
 }
 
 .contact-section .contact-form .card-body {
