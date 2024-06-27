@@ -241,7 +241,7 @@
 }
 
 /* Import Font Awesome for social media icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); */
 
 /* Contact section styles */
 .contact-section .card,
